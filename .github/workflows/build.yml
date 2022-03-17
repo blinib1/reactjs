@@ -18,7 +18,7 @@ jobs:
     - name: Build the Docker image
       working-directory: web-app
       env:
-        IMAGE_TAG: $(date +%s)
+        IMAGE_TAG: ${{ github.sha }}
       run:
          docker build . --file Dockerfile --tag blinib1/react.js:$IMAGE_TAG
-         docker push --tag blinib1/react.js:$IMAGE_TAG
+         docker push blinib1/react.js:$IMAGE_TAG
