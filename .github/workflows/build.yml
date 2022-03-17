@@ -21,4 +21,4 @@ jobs:
         IMAGE_TAG: $(date +%s)
       run:
          docker build . --file Dockerfile --tag blinib1/react.js:$IMAGE_TAG
-         docker push blinib1/react.js:$IMAGE_TAG
+         docker push --tag blinib1/react.js:$IMAGE_TAG
