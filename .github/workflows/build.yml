@@ -17,4 +17,6 @@ jobs:
     - uses: actions/checkout@v2
     - name: Build the Docker image
       working-directory: web-app
-      run: docker build . --file Dockerfile --tag blinib1/react.js:$(date +%s)
+      run:
+         docker build . --file Dockerfile --tag blinib1/react.js:$(date +%s)
+         docker push blinib1/react.js:$(date +%s)
