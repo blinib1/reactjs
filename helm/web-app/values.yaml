@@ -11,9 +11,9 @@ image:
   tag: "latest"
 
 imagePullSecrets: 
- -name:
+ -name: regcred
 nameOverride: ""
-fullnameOverride: "" regcred
+fullnameOverride: "" 
 
 serviceAccount:
   # Specifies whether a service account should be created
