@@ -28,3 +28,4 @@ jobs:
          docker build . --file Dockerfile --tag blinib1/react.js:$IMAGE_TAG  --tag blinib1/react.js:latest
          docker push blinib1/react.js:$IMAGE_TAG
          docker push blinib1/react.js:latest
+
