@@ -25,5 +25,5 @@ jobs:
       env:
         IMAGE_TAG: ${{ github.sha }}
       run: |
-         docker build . --file Dockerfile --tag blinib1/react.js:$IMAGE_TAG
+         docker build . --file Dockerfile --tag blinib1/react.js:$IMAGE_TAG  --tag blinib1/react.js:latest
          docker push blinib1/react.js:$IMAGE_TAG
